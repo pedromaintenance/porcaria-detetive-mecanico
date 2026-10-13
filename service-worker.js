@@ -1,4 +1,4 @@
-const CACHE = 'porcaria-detetive-v1.0.0';
+const CACHE = 'porcaria-detetive-v1.0.1';
 const CORE = ['./', './index.html', './manifest.webmanifest','./css/style.css','./js/cases.js','./js/app.js','./icons/icon-192.png','./icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting()));
